@@ -4,6 +4,7 @@ import Scrollbars from 'solid-custom-scrollbars'
 import hljs from 'highlight.js/lib/core';
 import json from 'highlight.js/lib/languages/json';
 import 'highlight.js/styles/tokyo-night-dark.min.css';
+import './env.css'
 
 hljs.registerLanguage('json', json);
 
@@ -26,12 +27,27 @@ export default function EnvView(_props: any) {
   });
 
   return (
-    <Scrollbars style={{ height: '60dvh' }}>
-      <pre>
-        <code class={`hljs ${props.class}`} innerHTML={highlightedCode()} >
-          {JSON.stringify(ENV_FILE, null, 2)}
-        </code>
-      </pre>
-    </Scrollbars>
+    <>
+      <Scrollbars
+        style={{
+          background: "transparent",
+          "border-radius": "4.2rem",
+          "scrollbar-color": "#e0b1cb #231942",
+          width: '100%',
+        }}
+        color='#e0b1cb'
+        autoHeight
+        autoHeightMax='85dvh'
+        autoHeightMin='40dvh'
+      >
+        <pre
+          style={{ "overflow-x": "hidden", width: '100%' }}
+        >
+          <code class={`hljs ${props.class}`} innerHTML={highlightedCode()} >
+            {JSON.stringify(ENV_FILE, null, 2)}
+          </code>
+        </pre>
+      </Scrollbars >
+    </>
   );
 }

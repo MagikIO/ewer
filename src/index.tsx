@@ -36,7 +36,7 @@ const Layout = (props: any) => {
   return (
     <div class="bg-secondary h-full">
       <Nav />
-      <section>{props.children}</section>
+      {props.children}
     </div>
   );
 }
