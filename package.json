@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "get-env": "fish -c \"env2json -o ./src/assets/env.json -f\"",
-    "start": "vite",
-    "dev": "vite",
+    "dev": "yarn get-env && vite",
     "build": "vite build",
     "serve": "vite preview"
   },
