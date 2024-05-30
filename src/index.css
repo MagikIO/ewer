@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Load in our coding font from ./assets/fonts/FiraCodeNerdFontPropo-Regular.ttf
+    and set it as the default font for code blocks */
+@font-face {
+  font-family: 'FiraCode-Proportional';
+  src: url('./assets/fonts/FiraCodeNerdFontPropo-Regular.ttf') format('truetype');
+}
+
+pre {
+  font-family: 'FiraCode-Proportional', monospace;
+}
+
+#root {
+  height: 100dvw;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
