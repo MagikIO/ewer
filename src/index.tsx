@@ -13,10 +13,24 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-const routes = [{
-  path: "/",
-  component: lazy(() => import("./App")),
-}] as Array<RouteDefinition>;
+const routes = [
+  {
+    path: "/",
+    component: lazy(() => import("./home"))
+  },
+  {
+    path: "/prompt",
+    component: lazy(() => import("./prompt"))
+  },
+  {
+    path: "/env",
+    component: lazy(() => import("./env"))
+  },
+  {
+    path: "/familiar",
+    component: lazy(() => import("./familiar"))
+  }
+] as Array<RouteDefinition>;
 
 const Layout = (props: any) => {
   return (
