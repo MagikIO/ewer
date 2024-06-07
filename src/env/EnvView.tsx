@@ -1,10 +1,10 @@
-import { createEffect, createMemo, splitProps, mergeProps } from "solid-js";
-import ENV_FILE from "../assets/env.json"
-import Scrollbars from 'solid-custom-scrollbars'
 import hljs from 'highlight.js/lib/core';
 import json from 'highlight.js/lib/languages/json';
 import 'highlight.js/styles/tokyo-night-dark.min.css';
-import './env.css'
+import Scrollbars from 'solid-custom-scrollbars';
+import { createEffect, createMemo, mergeProps, splitProps } from "solid-js";
+import ladle from '../modules/ladle';
+import './env.css';
 
 hljs.registerLanguage('json', json);
 
@@ -44,7 +44,7 @@ export default function EnvView(_props: any) {
           style={{ "overflow-x": "hidden", width: '100%' }}
         >
           <code class={`hljs ${props.class}`} innerHTML={highlightedCode()} >
-            {JSON.stringify(ENV_FILE, null, 2)}
+            {JSON.stringify(ladle('all:raw'), null, 2)}
           </code>
         </pre>
       </Scrollbars >
