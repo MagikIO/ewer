@@ -14,3 +14,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.expandable-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1a1b26;
+  transition: all 500ms ease-in-out;
+  border-radius: 9999px;
+  margin-top: 1.25rem;
+}
+
+.sub-section {
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 40dvh;
+    max-height: 85dvh;
+    background: transparent;
+    border-radius: 4.2rem;
+    scrollbar-color: rgb(224, 177, 203) rgb(35, 25, 66);
+}
