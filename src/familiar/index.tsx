@@ -6,7 +6,6 @@ export default () => {
   const familiar = cauldron_envs.find((env) => env.name === 'FAMILIAR')!;
   const unlockedFamiliars = cauldron_envs.find((env) => env.name === 'UNLOCKED_FAMILIARS')!;
 
-
   return (
     <Expandable header="Familiar">
       <div>

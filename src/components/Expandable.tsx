@@ -7,7 +7,7 @@ interface ExpandableProps {
   children: JSX.Element | JSX.Element[]
 }
 
-const Expandable: Component<ExpandableProps> = (props) => {
+export const Expandable: Component<ExpandableProps> = (props) => {
   const [fullWidthPref, changeFullWidthPref] = createSignal(false);
   const fullWidthSectionStyle = () => fullWidthPref() ? 'w-[98dvw]' : 'w-2/3';
   const toggleFullWidth = () => changeFullWidthPref(!fullWidthPref());

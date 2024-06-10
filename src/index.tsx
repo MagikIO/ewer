@@ -1,6 +1,6 @@
 /* @refresh reload */
 import { Router, type RouteDefinition } from "@solidjs/router";
-import { lazy } from "solid-js";
+import { lazy, type Component, type JSXElement } from "solid-js";
 import { render } from 'solid-js/web';
 import Nav from './components/Nav';
 import './index.css';
@@ -32,7 +32,7 @@ const routes = [
   }
 ] as Array<RouteDefinition>;
 
-const Layout = (props: any) => {
+const Layout: Component<{ children?: JSXElement }> = (props) => {
   return (
     <div class="bg-secondary h-full">
       <Nav />
