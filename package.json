@@ -25,5 +25,5 @@
     "solid-custom-scrollbars": "^0.1.7",
     "solid-js": "^1.8.11"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.3.1"
 }
