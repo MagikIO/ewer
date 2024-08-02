@@ -1,7 +1,7 @@
 {
-  "name": "vite-template-solid",
+  "name": "ewer",
   "version": "0.0.0",
-  "description": "",
+  "description": "A site to manage your Cauldron",
   "scripts": {
     "get-env": "fish -c \"env2json -o ./src/assets/env.json -f\"",
     "dev": "yarn get-env && vite",
