@@ -44,8 +44,8 @@ export default function Nav() {
         <li class={`border-b-2 ${active("/")} mx-1.5 sm:mx-6`}>
           <A href="/">Home</A>
         </li>
-        <li class={`border-b-2 ${active("/prompt")} mx-1.5 sm:mx-6`}>
-          <A href="/prompt">Prompt</A>
+        <li class={`border-b-2 ${active("/config")} mx-1.5 sm:mx-6`}>
+          <A href="/config">Config</A>
         </li>
       </ul>
 

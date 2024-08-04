@@ -38,3 +38,10 @@ body {
     border-radius: 4.2rem;
     scrollbar-color: rgb(224, 177, 203) rgb(35, 25, 66);
 }
+
+.hr {
+  border-image-source: linear-gradient(90deg, rgb(63 0 255) 0%, rgba(84, 9, 121, 1) 44%, rgba(0, 151, 255, 1) 100%);
+    border-color: rgb(2, 0, 36);
+    border-image-slice: 1;
+  margin-top: 6px;
+}

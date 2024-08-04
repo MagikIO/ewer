@@ -19,8 +19,8 @@ const routes = [
     component: lazy(() => import("./home"))
   },
   {
-    path: "/prompt",
-    component: lazy(() => import("./prompt"))
+    path: "/config",
+    component: lazy(() => import("./config"))
   },
   {
     path: "/env",

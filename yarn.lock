@@ -670,6 +670,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@neodrag/solid@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@neodrag/solid@npm:2.0.4"
+  peerDependencies:
+    solid-js: ^1.0.0
+  checksum: 10c0/cdbd8098a5d0cabf35d07920c962cf38f07263c247948307ec09e0e0e2a5d1318163e582d697ff8e2fd37ca86ce8e7fef2a9d7dd0ab812d06f4b477349e05df7
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1066,6 +1075,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@thisbeyond/solid-dnd@npm:^0.7.5":
+  version: 0.7.5
+  resolution: "@thisbeyond/solid-dnd@npm:0.7.5"
+  peerDependencies:
+    solid-js: ^1.5
+  checksum: 10c0/55f3d73acc004f0bb11ee7e20705f7e9cf8728e654d74ef846b209e75433b932854e7cccf6f47f5ee94af543b47046015cd933884ba784fc736ce27f88545302
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.20.4":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -1111,6 +1129,15 @@ __metadata:
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
   checksum: 10c0/b3b0e334288ddb407c7b3357ca67dbee75ee22db242ca7c56fe27db4e1a31989cb8af48a84dd401deb787fe10cc6b2ab1ee82dc4783be87ededbe3d53c79c70d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.1.0":
+  version: 22.1.0
+  resolution: "@types/node@npm:22.1.0"
+  dependencies:
+    undici-types: "npm:~6.13.0"
+  checksum: 10c0/553dafcb842b889c036d43b390d464e8ffcf3ca455ddd5b1a1ef98396381eafbeb0c112a15cc6bf9662b72bc25fc45efc4b6f604760e1e84c410f1b7936c488b
   languageName: node
   linkType: hard
 
@@ -1837,6 +1864,28 @@ __metadata:
   checksum: 10c0/c12e3c2b2642d2bcae7d5aa495c60fa2f299160946535763969a1c83fc74518ffa9c2cd3a8b69ac56aea547df6a8aac25f729a342992ef0bbac5f1c73e78995d
   languageName: node
   linkType: hard
+
+"ewer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "ewer@workspace:."
+  dependencies:
+    "@neodrag/solid": "npm:^2.0.4"
+    "@solidjs/router": "npm:^0.14.1"
+    "@thisbeyond/solid-dnd": "npm:^0.7.5"
+    "@types/node": "npm:^22.1.0"
+    autoprefixer: "npm:^10.4.19"
+    highlight.js: "npm:^11.10.0"
+    postcss: "npm:^8.4.40"
+    solid-custom-scrollbars: "npm:^0.1.7"
+    solid-devtools: "npm:^0.30.1"
+    solid-js: "npm:^1.8.19"
+    tailwindcss: "npm:^3.4.7"
+    typescript: "npm:^5.5.4"
+    vite: "npm:^5.3.5"
+    vite-plugin-solid: "npm:^2.10.2"
+    vitest: "npm:^2.0.5"
+  languageName: unknown
+  linkType: soft
 
 "execa@npm:^8.0.1":
   version: 8.0.1
@@ -3385,6 +3434,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~6.13.0":
+  version: 6.13.0
+  resolution: "undici-types@npm:6.13.0"
+  checksum: 10c0/2de55181f569c77a4f08063f8bf2722fcbb6ea312a26a9e927bd1f5ea5cf3a281c5ddf23155061db083e0a25838f54813543ff13b0ac34d230d5c1205ead66c1
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^3.0.0":
   version: 3.0.0
   resolution: "unique-filename@npm:3.0.0"
@@ -3466,25 +3522,6 @@ __metadata:
   checksum: 10c0/872a9d63d9d1ada29921de37f7420b0636ae7bc4c596072da0f098d03d932dee38b9e5f6ce88b42b4d3b19c9f06ceffcb86a335d2752784da18ca2827bf8ee56
   languageName: node
   linkType: hard
-
-"vite-template-solid@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "vite-template-solid@workspace:."
-  dependencies:
-    "@solidjs/router": "npm:^0.14.1"
-    autoprefixer: "npm:^10.4.19"
-    highlight.js: "npm:^11.10.0"
-    postcss: "npm:^8.4.40"
-    solid-custom-scrollbars: "npm:^0.1.7"
-    solid-devtools: "npm:^0.30.1"
-    solid-js: "npm:^1.8.19"
-    tailwindcss: "npm:^3.4.7"
-    typescript: "npm:^5.5.4"
-    vite: "npm:^5.3.5"
-    vite-plugin-solid: "npm:^2.10.2"
-    vitest: "npm:^2.0.5"
-  languageName: unknown
-  linkType: soft
 
 "vite@npm:^5.0.0":
   version: 5.2.12

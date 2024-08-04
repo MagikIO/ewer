@@ -40,9 +40,7 @@ export default function EnvView(_props: any) {
         autoHeightMax='85dvh'
         autoHeightMin='40dvh'
       >
-        <pre
-          style={{ "overflow-x": "hidden", width: '100%' }}
-        >
+        <pre style={{ "overflow-x": "hidden", width: '100%' }}>
           <code class={`hljs ${props.class}`} innerHTML={highlightedCode()} >
             {JSON.stringify(ladle('all:raw'), null, 2)}
           </code>
